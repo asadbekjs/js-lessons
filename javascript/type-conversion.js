@@ -39,7 +39,3 @@ console.log(5 + "12"); // '5' + '12' = '512' => string
 console.log("15" * 3); // 45 => number
 console.log(30 - "44"); // -14 => number
 console.log("145" / 5); // 29 => number
-
-// Practice
-console.log(Number("17") - String(10)); // 17 - '10' = 17-10 = 7
-console.log(parseFloat("a132b") * 5); // NaN * 5 = NaN
