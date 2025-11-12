@@ -1,4 +1,4 @@
-// * arifmetik operatorlar
+// * arifmetik(arithmetic) operatorlar
 // modulus operatori
 console.log(6 % 3); // 0
 console.log(2 % 3, 7 % 10); // 2 // 7
@@ -27,7 +27,7 @@ let d = --c;
 console.log(c); // 3
 console.log(d); // 3
 
-// solishtirish operatorlar
+// solishtirish(comparison) operatorlar
 // ==(loose equality) va ===(strict equality)
 console.log(77 == "77"); // true
 console.log(5 == 7); // false
@@ -38,3 +38,33 @@ console.log(5 === "5"); // false (different types: number vs string)
 console.log(false === 0); // false (different types: boolean vs number)
 console.log(null === undefined); // false (different types: object vs undefined)
 console.log(77 === 77); // true
+console.log(5 != 3); // true
+console.log(5 != "5"); // false
+console.log(5 !== "5"); // true
+console.log(5 !== 5); // false
+
+// Assignment(tayinlash) operators
+let z = 7;
+console.log(z); // 7
+z += 5; // z = z + 5
+console.log(z); // 12
+z /= 2; // z = z / 2
+console.log(z); // 6
+z %= 5;
+console.log(z); // 1
+z **= 4;
+console.log(z); // 1
+
+// Logical(mantiqiy) operators
+// && - (and)
+const isAdult = true;
+const hasTicket = true;
+console.log(isAdult && hasTicket); // true
+// || - (or)
+const isStudent = false;
+const isSenior = true;
+console.log(isStudent || isSenior); // true
+
+// ! - Not
+const isMember = false;
+console.log(!isMember); // true
