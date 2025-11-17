@@ -36,3 +36,64 @@ if (productPrice < 50) {
 }
 
 console.log("Jami to'lov: ", productPrice);
+
+let color = "green";
+if (color === "red") {
+  console.log("Stop!");
+} else if (color === "yellow") {
+  console.log("Wait...");
+} else {
+  console.log("Go");
+}
+
+let son = 17;
+if (son % 2 === 0) {
+  console.log("Son ikkiga bo`linadi");
+}
+if (son % 3 === 0) {
+  console.log("Son uchga bo`linadi");
+}
+if (son % 5 === 0) {
+  console.log("Son beshga bo`linadi");
+}
+
+// let age = Number(prompt("Sizning yoshingiz: "));
+// let ticketPrice;
+// if (age <= 12) {
+//   ticketPrice = 5;
+// } else if (age > 12 && age <= 18) {
+//   ticketPrice = 8;
+// } else {
+//   ticketPrice = 20;
+// }
+// console.log("Sizning chiptangingiz narxi: ", ticketPrice, "$");
+
+// Nested condition
+// const isLoggedIn = false;
+// const isAdmin = false;
+
+// if (isLoggedIn) {
+//   if (isAdmin) {
+//     console.log("Xush kelibsiz, Admin!");
+//   } else {
+//     console.log("Xush kelibsiz, Foydalanuvchi!");
+//   }
+// } else {
+//   console.log("Iltimos, tizimga kiring");
+// }
+
+const role = "DISPATCHER"; // "DISPATCHER" "DRIVER"
+const isLoggedIn = true;
+let roleBasedText;
+if (isLoggedIn) {
+  if (role === "ADMIN") {
+    roleBasedText = "ADMIN";
+  } else if (role === "DISPATCHER") {
+    roleBasedText = "DISPATCHER";
+  } else {
+    roleBasedText = "DRIVER";
+  }
+  console.log("Tizimga", roleBasedText, "kirdi");
+} else {
+  console.log("Iltimos, tizimga kiring");
+}
