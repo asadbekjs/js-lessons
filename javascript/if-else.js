@@ -82,18 +82,51 @@ if (son % 5 === 0) {
 //   console.log("Iltimos, tizimga kiring");
 // }
 
-const role = "DISPATCHER"; // "DISPATCHER" "DRIVER"
-const isLoggedIn = true;
-let roleBasedText;
-if (isLoggedIn) {
-  if (role === "ADMIN") {
-    roleBasedText = "ADMIN";
-  } else if (role === "DISPATCHER") {
-    roleBasedText = "DISPATCHER";
+// const role = "ADMIN"; // "DISPATCHER" "DRIVER" "ADMIN"
+// const isLoggedIn = true;
+// let roleBasedText;
+// if (isLoggedIn) {
+//   if (role === "ADMIN") {
+//     roleBasedText = "ADMIN";
+//   } else if (role === "DISPATCHER") {
+//     roleBasedText = "DISPATCHER";
+//   } else {
+//     roleBasedText = "DRIVER";
+//   }
+//   console.log("Tizimga", roleBasedText, "kirdi");
+// } else {
+//   console.log("Iltimos, tizimga kiring");
+// }
+
+// let a = +prompt("sonlarni kiriting:");
+// let b = +prompt("sonlarni kiriting:");
+// if (a > b) {
+//   console.log(a);
+// } else {
+//   console.log(a, b);
+// }
+
+// let a = +prompt("birinchi sonni kiriting"); // 3
+// let b = +prompt("ikkinchi sonni kiriting"); // 3
+// let c = +prompt("uchinchi sonni kiritng"); // 6
+// if (a + b === c || a + c === b || b + c === a) {
+//   console.log("yes");
+// } else {
+//   console.log("no");
+// }
+
+let x = +prompt("x ni kiriting"); // 0.25
+let y = +prompt("y ni kiriting"); // 0.56
+let z = +prompt("z ni kiriting"); // 0.78
+if (x < 1 && y < 1 && z < 1) {
+  if (x < y && x < z) {
+    x = (y + z) / 2;
+  } else if (y < x && y < z) {
+    y = (x + z) / 2;
   } else {
-    roleBasedText = "DRIVER";
+    z = (x + y) / 2;
   }
-  console.log("Tizimga", roleBasedText, "kirdi");
+  console.log(x, y, z);
 } else {
-  console.log("Iltimos, tizimga kiring");
+  console.log(x, y, z);
 }
