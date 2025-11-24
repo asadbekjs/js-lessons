@@ -115,18 +115,91 @@ if (son % 5 === 0) {
 //   console.log("no");
 // }
 
-let x = +prompt("x ni kiriting"); // 0.25
-let y = +prompt("y ni kiriting"); // 0.56
-let z = +prompt("z ni kiriting"); // 0.78
-if (x < 1 && y < 1 && z < 1) {
-  if (x < y && x < z) {
-    x = (y + z) / 2;
-  } else if (y < x && y < z) {
-    y = (x + z) / 2;
-  } else {
-    z = (x + y) / 2;
-  }
-  console.log(x, y, z);
-} else {
-  console.log(x, y, z);
-}
+// let x = +prompt("x ni kiriting"); // 0.25
+// let y = +prompt("y ni kiriting"); // 0.56
+// let z = +prompt("z ni kiriting"); // 0.78
+// if (x < 1 && y < 1 && z < 1) {
+//   if (x < y && x < z) {
+//     x = (y + z) / 2;
+//   } else if (y < x && y < z) {
+//     y = (x + z) / 2;
+//   } else {
+//     z = (x + y) / 2;
+//   }
+//   console.log(x, y, z);
+// } else {
+//   console.log(x, y, z);
+// }
+
+// let x = +prompt("Birinchi sonni kiriting"); // 4
+// let y = +prompt("Ikkinchi sonni kiriting"); // 6
+
+// let a = (x + y) / 2;
+// let b = 4 * x * y;
+
+// if (x > y) {
+//   y = a;
+//   x = b;
+// } else {
+//   y = b;
+//   x = a;
+// }
+// console.log(x.toFixed(1), y.toFixed(1));
+
+// let x = +prompt("Birinchi sonni kiriting");
+// let y = +prompt("Ikkinchi sonni kiriting");
+// let z = +prompt("Uchinchi sonni kiriting");
+// if (x > 0) {
+//   x = x * x;
+// }
+// if (y > 0) {
+//   y = y * y;
+// }
+// if (z > 0) {
+//   z = z * z;
+// }
+// console.log(x, y, z);
+
+// let x = +prompt("Birinchi sonni kiriting");
+// let y = +prompt("Ikkinchi sonni kiriting");
+// let z = +prompt("Uchinchi sonni kiriting");
+
+// if (x + y > z || x + z > y || y + z > x) {
+//   console.log("Yes");
+// } else {
+//   console.log("No");
+// }
+
+// let x = +prompt("Birinchi sonni kiriting");
+// let y = +prompt("Ikkinchi sonni kiriting");
+// if (x < 0 && y < 0) {
+//   x = Math.abs(x);
+//   y = Math.abs(y);
+// } else if (x < 0 || y < 0) {
+//   x += 0.5;
+//   y += 0.5;
+// } else {
+//   x = x;
+//   y = y;
+// }
+// console.log(x, y);
+
+// let age = +prompt("Yoshingizni kiriting:");
+// if (age < 18) {
+//   console.log("Sizga kirish mumkin emas");
+// } else {
+//   console.log("Xush kelibsiz");
+// }
+
+// Ternary operator
+// syntax: condition ? trueBlock : falseBlock;
+// let age = +prompt("Yoshingizni kiriting:");
+// let message = age < 18 ? "Sizga kirish mumkin emas" : "Xush kelibsiz";
+// console.log(message);
+
+let number2 = +prompt("Son kiriting:");
+let type = number2 % 2 === 0 ? "Juft son" : "Toq son";
+console.log(type);
+
+// isLoggedIn ? <Dashboard /> : <Login />;
+// isLoading ? <Spinner /> : <Content />;
