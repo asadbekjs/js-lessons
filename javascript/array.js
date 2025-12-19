@@ -2,6 +2,10 @@
 let fruits = ["Olma", "Banan", "Apelsin"];
 console.log(fruits); // ["Olma", "Banan", "Apelsin"]
 
+for (let i = 0; i < fruits.length; i++) {
+  console.log(fruits[i]);
+}
+
 // Array uzunligi
 console.log(fruits.length); // 3
 

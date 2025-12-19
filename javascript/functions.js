@@ -100,4 +100,45 @@ let combinedString = concatStrings("Salom, ", "dunyo!");
 console.log(combinedString); // "Salom, dunyo!"
 console.log(concatStrings("JavaScript ", "funksiyalari")); // "JavaScript funksiyalari"
 
-const logResultOfExam = (score) => {};
+// const logResultOfExam = (score) => {
+//   if (score < 56) {
+//     console.log("Imtihondan yiqildingiz");
+//   } else if (score < 70) {
+//     console.log("3 baho oldingiz");
+//   } else if (score < 86) {
+//     console.log("4 baho oldingiz");
+//   } else console.log("5 baho oldingiz");
+// };
+
+// logResultOfExam(100);
+
+// Function topshiriqlari
+// const reverseString = (str) => {
+//   const characters = str.split(""); // Stringni arrayga aylantirish
+//   const reversedCharacters = characters.reverse(); // Array elementlarini teskari tartibga keltirish
+//   const reversedStr = reversedCharacters.join(""); // Teskari tartibdagi arrayni stringga aylantirish
+//   return reversedStr;
+// };
+
+// console.log(reverseString("hello")); // "olleh"
+// console.log(reverseString("Husanboy")); // "yobnasuH"
+// console.log(reverseString("level")); // "level"
+
+const reverseString = (str) => {
+  const characters = str.split(""); // Stringni arrayga aylantirish
+  let reversedStr = "";
+  for (let i = characters.length - 1; i >= 0; i--) {
+    reversedStr += characters[i];
+  }
+  return reversedStr;
+};
+
+console.log(reverseString("hello")); // "olleh"
+
+const countDigits = (number) => {
+  const numberStr = String(number); // Raqamni stringga aylantirish
+  return numberStr.length;
+};
+
+console.log(countDigits(12345)); // 5
+console.log(countDigits(7)); // 1
