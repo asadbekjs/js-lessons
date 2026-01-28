@@ -75,7 +75,8 @@
 //   console.log(element);
 // }
 
-const numbers = [-5, 8, 0, 12, -6, 5]; // [12, -6]
+// * Practice
+// const numbers = [-5, 8, 0, 12, -6, 5]; // [12, -6]
 // DRY - Don't Repeat Yourself
 // const positiveNumbers = [];
 // const negativeNumbers = [];
@@ -87,10 +88,62 @@ const numbers = [-5, 8, 0, 12, -6, 5]; // [12, -6]
 //   }
 // }
 // console.log(positiveNumbers, negativeNumbers);
-const nums = [];
-for (let i = 0; i < numbers.length; i++) {
-  if (numbers[i] % 3 === 0) {
-    nums.push(numbers[i]);
-  }
-}
+// const nums = [];
+// for (let i = 0; i < numbers.length; i++) {
+//   if (numbers[i] % 3 === 0) {
+//     nums.push(numbers[i]);
+//   }
+// }
+// console.log(nums);
+
+// const arr = [3, 5, 12, -7, 8, 15];
+// let num = 1;
+// arr.forEach((value) => {
+//   if (value % 2 === 0 || value % 5 === 0) {
+//     num *= value;
+//   }
+// });
+// console.log(num);
+
+// const arr = [2, 3, -4, 0];
+// let s = 0;
+// for (let i = 0; i < arr.length; i++) {
+//   s += arr[i] ** 2;
+// }
+// console.log(s);
+
+// map() method
+const numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+const newNumbers = numbers.map((value) => value * 2);
+
+console.log(newNumbers);
+const mappedArray = numbers.map((value, index) => {
+  return `Son ${index + 1}: ${value}`;
+});
+console.log(mappedArray);
+
+// filter() method
+const nums = numbers.filter((value) => value % 2 === 0);
 console.log(nums);
+
+const filteredArray = numbers.filter((value) => value > 5);
+console.log(filteredArray);
+
+// find() method
+const foundNum = numbers.find((value) => value > 7);
+console.log(foundNum); // 8
+
+const foundIndex = numbers.findIndex((value) => value > 7);
+console.log(foundIndex); // 7
+
+// sort() method
+const fruits = ["Banana", "Orange", "Apple", "Mango"];
+fruits.sort();
+console.log(fruits);
+// Output: ["Apple", "Banana", "Mango", "Orange"] (alphabetical order)
+const numbers2 = [40, 100, 1, 5, 25, 10];
+const ascedingArray = numbers2.sort((a, b) => a - b);
+console.log(ascedingArray); // [1, 5, 10, 25, 40, 100]
+
+const descedingArray = numbers2.sort((a, b) => b - a);
+console.log(descedingArray); // [100, 40, 25, 10, 5, 1]
