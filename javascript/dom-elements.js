@@ -24,3 +24,7 @@ console.log(h3Element);
 
 const pElement = document.querySelector("p");
 console.log(pElement);
+
+// 5. Get elements by query selector all
+const headingElements = document.querySelectorAll(".title");
+console.log(headingElements); // NodeList => []
