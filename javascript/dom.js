@@ -1,4 +1,6 @@
 // Accessing Element Content
+// document.write()
+// document.write("<h1>Hi, JavaScript</h1>");
 // 1. innerText/textContent - element ichidagi textni oladi
 const element = document.getElementById("learn");
 console.log(element);
@@ -29,6 +31,33 @@ image.removeAttribute("height");
 console.log(image);
 
 // element.style.property
+// changing element style
 const h2Element = document.querySelector("h2");
-console.log(h2Element.style); // CSSStyleDeclaration => {}
+// console.log(h2Element.style); // CSSStyleDeclaration => {}
 h2Element.style.color = "blue";
+h2Element.style.fontSize = "40px";
+h2Element.style.textAlign = "center";
+// console.log(h2Element.style);
+
+// Manipulating Structure
+// 1. document.createElement() - element yaratish
+const spanElement = document.createElement("span");
+spanElement.innerText = "Span element";
+const pElement = document.createElement("p");
+pElement.innerText = "Paragraph element";
+
+// 2. appendChild() - HTML element ichiga element qo'shish
+divElement.appendChild(spanElement);
+divElement.appendChild(pElement);
+pElement.style.color = "darkgreen";
+
+// 3. removeChild() - HTML element ichidagi elementni o'chirish
+h2Element2 = document.querySelector(".box h2");
+// console.log(h2Element2);
+// divElement.removeChild(h2Element2);
+
+// 4. replaceChild() - HTML element ichidagi elementni almashtirish
+const h3Element = document.createElement("h3");
+h3Element.innerText = "H3 element";
+divElement.replaceChild(h3Element, h2Element2);
+// divElement.replaceChild(h3Element, h2Element2);
