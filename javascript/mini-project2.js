@@ -11,13 +11,18 @@ for (let i = 0; i < 102; i++) {
   span.style.fontSize = "32px";
   span.style.padding = "16px";
   span.style.textAlign = "center";
-  span.style.backgroundColor = "blue";
-  span.style.color = "white";
-  // span.style.backgroundColor = isPrimeEvenOddNumber(i);
+  span.style.color = "lightblue";
+  span.style.backgroundColor = isPrimeEvenOddNumber(i);
 }
 
 function isPrimeEvenOddNumber(number) {
-  // Agar prime bo'lsa "red" qaytarilsin
-  // Agar even bo'lsa "green" qaytarilsin
-  // Agar odd bo'lsa "yellow" qaytarilsin
+  if (number < 2) {
+    return number % 2 === 0 ? "green" : "yellow";
+  }
+  for (let i = 2; i < number; i++) {
+    if (number % i === 0) {
+      return number % 2 === 0 ? "green" : "yellow";
+    }
+  }
+  return "red";
 }
