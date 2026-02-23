@@ -1,5 +1,17 @@
 const btn = document.getElementById("btn");
 const body = document.getElementById("body");
+const input = document.querySelector("input");
+const p = document.querySelector("p");
+
+input.addEventListener("blur", (e) => {
+  p.textContent = "Field is required";
+  p.style.color = "red";
+});
+
+body.addEventListener("keypress", (e) => {
+  console.log(e);
+  alert(e.key, e.keyCode);
+});
 
 btn.addEventListener("click", (event) => {
   console.log("Button Clicked");
